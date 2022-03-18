@@ -1,7 +1,6 @@
 {
   "ovpn_file":[
-    {"id":0,"file":"
-     client
+    {"id":0,"file":"client
 dev tun
 proto udp
 remote 136.244.87.3 1194
@@ -9,6 +8,14 @@ resolv-retry infinite
 nobind
 persist-key
 persist-tun
+remote-cert-tls server
+cipher AES-128-CBC
+auth SHA1
+auth-user-pass
+redirect-gateway def1
+verb 3
+
+<ca>
 -----BEGIN CERTIFICATE-----
 MIIDFjCCAf6gAwIBAgIIEfqDRiNatMYwDQYJKoZIhvcNAQELBQAwFjEUMBIGA1UE
 AwwLZXhhbXBsZS5jb20wHhcNMjIwMzE4MDQ0MDI2WhcNMzIwMzE1MDQ0MDI2WjAW
@@ -28,6 +35,9 @@ BsPKULsxgKNJZb0n0un0qKLpsIAinSPil9XqA4AZ+u6Ou7uDudP9Kj/Nf8E7VgTB
 vzcEMA/2PqTrw++oPjqklQb61u8u/VH3POjWX7cDJvLAlFtFPnj57wlsoXmxl3LO
 ZhaJvyoWfhw2icySNggJp8BdiTO7i2ZkrcM=
 -----END CERTIFICATE-----
+</ca>
+#<tls-auth>
+<cert>
 -----BEGIN CERTIFICATE-----
 MIIDMjCCAhqgAwIBAgIIMcGBNNrxEYIwDQYJKoZIhvcNAQELBQAwFjEUMBIGA1UE
 AwwLZXhhbXBsZS5jb20wHhcNMjIwMzE4MDQ0MDI5WhcNMzIwMzE1MDQ0MDI5WjAd
@@ -48,6 +58,8 @@ JExdyauJz8vqc6aV4aQHMoK1v4VjRPmr5SrxBTJa0gunwuMg66UucS3Y4bJv+GJN
 xaxrfdc3YxeqFkSsJAJiaevg7LMeYR2c0tGN/wiOyrZFf/hOGyRdFCmmHJHuJJTU
 KSoVuf3k
 -----END CERTIFICATE-----
+</cert>
+<key>
 -----BEGIN RSA PRIVATE KEY-----
 MIIEpQIBAAKCAQEA+ivyfQ7qm3d15dyNGNI+MOH5xbl7b9p3hdp3sEIwOTtvi0Wx
 VaklOV3ssIWu56im1dMUBJahBUaxwHl0A2e7UbONfS6ZthjsR5rpZ60Q/mdbkrIP
@@ -75,12 +87,5 @@ h4n6388CgYEAs/kabEq6F1R6lK82u2bWvJ86mHVdQi2n9/fNCKAyhsFEzObGP5/y
 GBQs1XrqUqLnIot3AfcoRATwqwhdeh4cTgOFzBdHVZ8kGfmQ7dSsHEx437Maad9x
 ffHIoiM3qX/muXIYS653gdGv3TJlp9k2bzG43/XKi3JN7/w8MR/vtUA=
 -----END RSA PRIVATE KEY-----
-
-remote-cert-tls server
-cipher AES-128-CBC
-auth SHA1
-auth-user-pass
-redirect-gateway def1
-verb 3
-     "}]
+</key>"}]
 }
