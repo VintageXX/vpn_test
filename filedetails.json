@@ -14,7 +14,7 @@ cipher AES-128-CBC
 auth SHA1
 auth_username free
 password free
-#<auth-user-pass>
+auth-user-pass
 #free
 #free
 #</auth-user-pass>
