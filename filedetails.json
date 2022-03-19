@@ -12,13 +12,7 @@ persist-tun
 remote-cert-tls server
 cipher AES-128-CBC
 auth SHA1
-auth_username free
-password free
 auth-user-pass
-#free
-#free
-#</auth-user-pass>
-
 redirect-gateway def1
 verb 3
 
