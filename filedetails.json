@@ -15,7 +15,6 @@ auth SHA1
 auth-user-pass
 redirect-gateway def1
 verb 3
-
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIDGDCCAgCgAwIBAgIIfVlZB6p4Av4wDQYJKoZIhvcNAQELBQAwFzEVMBMGA1UE
@@ -37,7 +36,7 @@ Ykhr+6DskDPhfoGhXyc3cNHdM4PXnt0HYOX3tUn8FT87toXigyqg4gbKdy970Ybr
 qYm6fo16HECt1lJkDOYnziADXlyEYYd5qRA6Nw==
 -----END CERTIFICATE-----
 </ca>
-#<tls-auth>
+
 <cert>
 -----BEGIN CERTIFICATE-----
 MIIDNDCCAhygAwIBAgIIf7snhdzTYjcwDQYJKoZIhvcNAQELBQAwFzEVMBMGA1UE
@@ -60,6 +59,7 @@ GZiC2SBTP7AQR/yXm6sfwuHSwuEXiQSk8o8i6y1GUqnwidNRvQW3fcT+4fQCRY5M
 VekM/aBg/Tg=
 -----END CERTIFICATE-----
 </cert>
+
 <key>
 -----BEGIN RSA PRIVATE KEY-----
 MIIEpQIBAAKCAQEArxZOABrUDbIOyT8OTPoca02WBrfbQNsFPRW97olbRFm+nmZ2
